@@ -8,6 +8,7 @@
       href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
+    <!-- <link rel="stylesheet" href=""> -->
     <link rel="stylesheet" href="styles\style.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -417,41 +418,133 @@
                 </p>
               </div>
             </div>
+            <div class="controls">
+              <div class="container">
+                <div class="dots">
+                  <div class="dot"></div>
+                  <div class="dot"></div>
+                  <div class="dot"></div>
+                </div>
+                <div class="arrows">
+                  <img class="arrow-left" src="images/arrow-left.svg" alt="" />
+                  <img
+                    class="arrow-right"
+                    src="images/arrow-right.svg"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
           </div>
         </section>
 
-        <section class="subscribe row">
-          <div class="box">
-            <h2 class="box__title box__title-2">
-              Subscribe Now for<br />
-              Get Special Features!
-            </h2>
-            <p class="description">Let's subscribe with us and find the fun.</p>
+        <section class="subscribe_section">
+          <div class="subscribe row">
+            <div class="box">
+              <h2 class="box__title box__title-2">
+                Subscribe Now for<br />
+                Get Special Features!
+              </h2>
+              <p class="description">
+                Let's subscribe with us and find the fun.
+              </p>
+            </div>
+            <a class="box__GetStarted" href="#">Subscribe Now</a>
           </div>
-          <a class="box__GetStarted" href="#">Subscribe Now</a>
-        </section>
 
-        <section class="last plan">
-          <div class="logo">
-            <img src="images/Vector.svg" alt="Site Logo" />
-            <h3 class="logo__title">
-              Lasles<span class="logo__title--vpn">VPN</span>
-            </h3>
-            <p class="description">
-              LaslesVPN is a private virtual network that has unique features
-              and has high security.
-            </p>
-            <span class="social_media">
-              <img src="images/Facebook.svg" alt="" class="logo" />
-              <img src="images/Instagram.svg" alt="" class="logo" />
-              <img src="images/Twitter.svg" alt="" class="logo" />
-            </span>
-            <span class="footer">©2024 by Mahmoud Mansy</span>
-          </div>
+          <section class="last">
+            <div class="logo_last">
+              <div class="logo">
+                <img src="images/Vector.svg" alt="Site Logo" />
+                <h3 class="logo__title">
+                  Lasles<span class="logo__title--vpn">VPN</span>
+                </h3>
+              </div>
+              <p class="description">
+                LaslesVPN is a private virtual network that <br />
+                has unique features and has high security.
+              </p>
+              <span class="social_media">
+                <img src="images/Facebook.svg" alt="Facebook logo" />
+                <img src="images/Instagram.svg" alt="Instagram logo" />
+                <img src="images/Twitter.svg" alt="Twitter logo" />
+              </span>
+              <p class="footer description">©2024 by Mahmoud Mansy</p>
+            </div>
+
+            <div class="product">
+              <ul class="links">
+                <h3 class="links__title">Product</h3>
+                <li class="links__item">Download</li>
+                <li class="links__item">Pricing</li>
+                <li class="links__item">Locations</li>
+                <li class="links__item">Server</li>
+                <li class="links__item">Countries</li>
+                <li class="links__item">Blog</li>
+              </ul>
+            </div>
+            <div class="product">
+              <ul class="links">
+                <h3 class="links__title">Engage</h3>
+                <li class="links__item">LaslesVPN ?</li>
+                <li class="links__item">FAQ</li>
+                <li class="links__item">Tutorials</li>
+                <li class="links__item">About Us</li>
+                <li class="links__item">Privacy Policy</li>
+                <li class="links__item">Terms of Service</li>
+              </ul>
+            </div>
+            <div class="product">
+              <ul class="links">
+                <h3 class="links__title">Earn Money</h3>
+                <li class="links__item">Download</li>
+                <li class="links__item">Pricing</li>
+              </ul>
+            </div>
+          </section>
         </section>
       </article>
       <!-- End Article -->
     </div>
     <!-- End Container -->
   </body>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const wrapper = document.querySelector(".clients__wrapper");
+      const dotsContainer = document.querySelector(".dots");
+      const dots = Array.from(dotsContainer.children);
+      const arrowLeft = document.querySelector(".arrow-left");
+      const arrowRight = document.querySelector(".arrow-right");
+      const scrollStep = wrapper.offsetWidth;
+
+      let currentIndex = 0;
+
+      dots.forEach((dot, index) => {
+        dot.addEventListener("click", () => {
+          currentIndex = index;
+          updateSlider();
+        });
+      });
+
+      arrowLeft.addEventListener("click", () => {
+        currentIndex = Math.max(0, currentIndex - 1);
+        updateSlider();
+      });
+
+      arrowRight.addEventListener("click", () => {
+        currentIndex = Math.min(dots.length - 1, currentIndex + 1);
+        updateSlider();
+      });
+
+      function updateSlider() {
+        wrapper.style.transform = `translateX(-${
+          (currentIndex * scrollStep) / 2
+        }px)`;
+
+        dots.forEach((dot, index) => {
+          dot.classList.toggle("active", index === currentIndex);
+        });
+      }
+    });
+  </script>
 </html>
