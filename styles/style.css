@@ -2,9 +2,13 @@
   --color-black-gray: #4f5665;
   --color-white-gray: #afb5c0;
   --color-very-black-gray: #0b132a;
-  --background-color: #f8f8f8;
   --color-red: #f53855;
   --color-dark-red: #f53838;
+  --background-color: linear-gradient(
+    180deg,
+    #f8f8f8 -45.04%,
+    rgba(248, 248, 248, 0) 88.56%
+  );
   --font-weight-light-bold: 400;
   --font-weight-bold: 500;
   --font-weight-very-bold: 700;
@@ -304,7 +308,6 @@ h2.box__title {
   margin: 0 auto;
   overflow-x: auto;
   column-gap: 5rem;
-  scroll-snap-type: x mandatory;
 }
 
 .clients_opinion {
@@ -368,12 +371,17 @@ h2.box__title {
   margin-top: 1rem;
 }
 
+.controls_container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
 .dots {
   display: flex;
-  justify-content: center;
   position: absolute;
-  bottom: -20px;
-  left: 50%;
+  left: 15%;
+  margin-right: auto;
   transform: translateX(-50%);
 }
 
@@ -387,27 +395,30 @@ h2.box__title {
 }
 
 .dot.active {
-  background-color: #333;
+  background-color: #f53838;
 }
 
 .arrows {
   display: flex;
   flex-direction: row;
+  column-gap: 2rem;
+  margin-top: 1rem;
   align-items: center;
   margin-left: auto;
+  margin-right: 30rem;
   cursor: pointer;
 }
 
 .arrow-left {
   padding: 2rem;
   border-radius: 50%;
-  border: 1px solid var(--color-red);
+  border: 2px solid #f53838;
 }
 
 .arrow-right {
-  padding: 2rem;
+  padding: 1.5rem;
   border-radius: 50%;
-  background-color: var(--color-red);
+  background-color: #f53838;
 }
 
 .subscribe_section {
@@ -417,21 +428,18 @@ h2.box__title {
 
 .subscribe {
   width: 90%;
-  margin-left: auto;
-  margin-right: auto;
+  margin: -25rem auto 0 auto;
   display: flex;
   padding: 6rem 7rem;
   align-items: center;
-  align-content: center;
-  margin-top: -25rem;
-  z-index: 10;
+  z-index: 1;
   background-color: #fff;
 }
 
 .last {
-  background: linear-gradient(180deg, var(--background-color) -45.04%, rgba(248, 248, 248, 0) 88.56%);
+  background: var(--background-color);
   display: flex;
-  padding-top: 20rem;
+  padding-top: 10rem;
   justify-content: center;
   flex-direction: row;
   column-gap: 12rem;
