@@ -541,6 +541,11 @@ h2.box__title {
   .premium_column {
     border: 2px solid #eeeff2;
   }
+  .vertical-line {
+    height: 0;
+    width: 80%;
+    border: 0.1px solid #eeeff2;
+  }
   .clients_opinion {
     max-width: 100%; /* Allow testimonials to take up full width on smaller screens */
   }
@@ -598,6 +603,7 @@ h2.box__title {
     z-index: 0;
   }
   .header {
+    position: relative;
     top: 0;
     padding: 0 1rem; /* Adjust padding as needed */
   }
