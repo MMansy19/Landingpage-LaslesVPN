@@ -330,7 +330,7 @@ h2.box__title {
   border: 2px solid #eeeff2;
   height: 23rem;
   border-radius: var(--default-radius);
-  flex-basis: 40%;
+  flex-basis: 30%;
   flex-shrink: 0;
   scroll-snap-align: start;
   padding: 1rem;
@@ -544,7 +544,7 @@ h2.box__title {
   .vertical-line {
     height: 0;
     width: 80%;
-    border: 0.1px solid #eeeff2;
+    border: 1px solid #eeeff2;
   }
   .clients_opinion {
     max-width: 100%; /* Allow testimonials to take up full width on smaller screens */
