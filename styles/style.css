@@ -482,8 +482,8 @@ h2.box__title {
 }
 
 .footer {
-  color: var(--color-white-gray);
   text-align: left;
+  color: var(--color-white-gray);
 }
 
 /* End Article */
@@ -578,6 +578,19 @@ h2.box__title {
   .links {
     text-align: center;
   }
+
+  .logo {
+    text-align: center;
+    justify-content: center;
+  }
+  .social_media {
+    justify-content: center;
+    text-align: center;
+  }
+  .footer {
+    text-align: center;
+    justify-content: center;
+  }
 }
 /* Add this media query for mobile devices with a maximum width of 500px */
 @media (max-width: 700px) {
@@ -598,4 +611,4 @@ h2.box__title {
     row-gap: 1rem;
   }
 }
-/* End Responsive For Mobile & Tablet *//*# sourceMappingURL=style.css.map */
+/* End Responsive For Mobile & Tablet */ /*# sourceMappingURL=style.css.map */
