@@ -7,7 +7,7 @@
 ## Overview
 
 Welcome to [Landing Page LaslesVPN]! This is a modern and feature-rich website designed as a landing page of LaslesVPN. The site incorporates various sections, features, and responsive design elements to enhance the user experience.
-
+### [Design On Figma](https://www.figma.com/file/y4g7B9BSJsuPkI101iyF5E/FREEBIES-Landingpage-LaslesVPN-Community)
 
 ## Table of Contents
 - [Features](#features)
