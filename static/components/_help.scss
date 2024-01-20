@@ -38,6 +38,10 @@
     margin-bottom: 1rem;
     color: var(--color-very-black-gray);
   }
+  .links__item:hover {
+    color: var(--color-red);
+    transition: 0.5s;
+  }
 
   /* Footer */
   .footer {

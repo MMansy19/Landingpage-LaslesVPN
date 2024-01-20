@@ -530,6 +530,10 @@ body {
   margin-bottom: 1rem;
   color: var(--color-very-black-gray);
 }
+.last .links__item:hover {
+  color: var(--color-red);
+  transition: 0.5s;
+}
 .last .footer {
   display: flex;
   column-gap: 2rem;
@@ -720,4 +724,4 @@ body {
     text-align: center;
   }
 }
-/* End Responsive For Mobile & Tablet *//*# sourceMappingURL=style.css.map */
+/* End Responsive For Mobile & Tablet */ /*# sourceMappingURL=style.css.map */
