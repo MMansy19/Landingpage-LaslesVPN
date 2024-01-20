@@ -1,0 +1,103 @@
+/* ========================
+   Section 1
+=========================== */
+.section-1 {
+  margin-bottom: 5rem;
+}
+
+.section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 4rem;
+}
+
+.box__title {
+  font-size: 5rem;
+  font-weight: var(--font-weight-bold);
+  color: var(--color-very-black-gray);
+}
+
+.box__GetStarted {
+  color: white;
+  margin-top: 5rem;
+  padding: 1.75rem 7.75rem;
+  border-radius: var(--default-radius);
+  background-color: var(--color-dark-red);
+  box-shadow: 0 0.4rem 0.8rem 0.5rem rgba(245, 56, 56, 0.35);
+  font-size: 1.6rem;
+  font-weight: var(--font-weight-very-bold);
+}
+
+h2.box__title {
+  font-size: 3.5rem;
+  font-weight: var(--font-weight-very-bold);
+}
+
+.image {
+  width: 100%;
+  max-width: 50rem;
+}
+
+.description {
+  color: var(--color-black-gray);
+  font-size: 1.6rem;
+  font-weight: var(--font-weight-light-bold);
+  margin: 2rem 0;
+}
+
+.box__list--item {
+  display: flex;
+  align-items: center;
+  row-gap: 2rem;
+  color: var(--color-black-gray);
+  font-size: 1.4rem;
+  font-weight: var(--font-weight-light-bold);
+}
+
+/* ========================
+   Section 2
+=========================== */
+.row {
+  width: 100%;
+  margin-top: 5rem;
+  justify-content: space-between;
+  padding: calc(var(--default-padding) / 2) calc(var(--default-padding) * 2);
+  border-radius: var(--default-radius);
+  box-shadow: 0 0.4rem 0.4rem 0.5rem rgba(13, 16, 37, 0.05);
+}
+
+.row__column {
+  padding: 5rem 3rem;
+  display: flex;
+  align-items: center;
+  column-gap: 5rem;
+}
+
+.vertical-line {
+  height: 12.5rem;
+  border: 2px solid #eeeff2;
+}
+
+.row__column--text {
+  font-size: 2.5rem;
+  color: var(--color-black-gray);
+}
+
+.number {
+  font-size: 2.5rem;
+  color: var(--color-very-black-gray);
+}
+
+/* ========================
+   Section 3
+=========================== */
+.section-3 {
+  column-gap: 17rem;
+}
+
+.box__list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.5rem;
+}

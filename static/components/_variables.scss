@@ -1,0 +1,29 @@
+:root {
+  /* Colors */
+  --color-black-gray: #4f5665;
+  --color-white-gray: #afb5c0;
+  --color-very-black-gray: #0b132a;
+  --color-red: #f53855;
+  --color-dark-red: #f53838;
+  --color-input-border: var(--color-black);
+
+  /* Background */
+  --background-color: linear-gradient(
+    180deg,
+    #f8f8f8 -45.04%,
+    rgba(248, 248, 248, 0) 88.56%
+  );
+
+  /* Font Weights */
+  --font-weight-light-bold: 400;
+  --font-weight-bold: 500;
+  --font-weight-very-bold: 700;
+
+  /* Defaults */
+  --default-radius: 1rem;
+  --default-padding: 2rem;
+
+  /* Widths */
+  --desktop-width: 1140px;
+  --tablet-width: 600px;
+}

@@ -1,0 +1,51 @@
+/* Last Section */
+.last {
+  background: var(--background-color);
+  display: flex;
+  padding-top: 10rem;
+  justify-content: center;
+  flex-direction: row;
+  column-gap: 12rem;
+
+  /* Logo Last */
+  .logo_last {
+    display: flex;
+    flex-direction: column;
+    .logo {
+      display: flex;
+      align-items: center;
+      column-gap: 1rem;
+      flex-direction: row;
+    }
+  }
+
+  /* Social Media */
+  .social_media {
+    display: flex;
+    flex-direction: row;
+  }
+
+  /* Links */
+  .links {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    text-align: left;
+    color: var(--color-black-gray);
+  }
+
+  .links__title {
+    margin-bottom: 1rem;
+    color: var(--color-very-black-gray);
+  }
+
+  /* Footer */
+  .footer {
+    display: flex;
+    column-gap: 2rem;
+    color: var(--color-white-gray);
+    text-align: left;
+  }
+}
+
+/* End Last Section */

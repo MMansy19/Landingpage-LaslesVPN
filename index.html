@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link rel="icon" type="image/x-icon" href="/images/Vector.svg" />
+    <link rel="icon" type="image/x-icon" href="/static/images/Vector.svg" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -9,7 +9,7 @@
       rel="stylesheet"
     />
     <!-- <link rel="stylesheet" href=""> -->
-    <link rel="stylesheet" href="styles\style.css" />
+    <link rel="stylesheet" href="static/styles/style.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Landing page LaslesVPN</title>
@@ -18,10 +18,9 @@
     <!-- Start Container -->
     <div class="container">
       <!-- Start Header -->
-
       <header id="Header" class="header">
         <div class="logo">
-          <img src="images/Vector.svg" alt="Site Logo" />
+          <img src="static/images/Vector.svg" alt="Site Logo" />
           <h3 class="logo__title">
             <a href="#"> Lasles<span class="logo__title--vpn">VPN</span> </a>
           </h3>
@@ -37,8 +36,16 @@
         </nav>
         <div class="sign">
           <span class="sign__in"><a href="#">Sign In</a></span>
-          <span class="sign__up"><a href="#Sign Up"> Sign Up</a></span>
+          <span class="sign__up"><a href="#"> Sign Up</a></span>
         </div>
+        <div onclick="toggleNav()">
+          <label class="burger-menu" for="menu">
+            <div class="burger-menu__bar"></div>
+            <div class="burger-menu__bar"></div>
+            <div class="burger-menu__bar"></div>
+          </label>
+        </div>
+        <input id="menu" class="burger-menu__checkbox" type="checkbox" />
       </header>
       <!-- End Header -->
 
@@ -59,7 +66,7 @@
           </div>
           <img
             class="image"
-            src="images/Illustration 1.svg"
+            src="static/images/Illustration 1.svg"
             alt="image of Illustration 1"
           />
         </section>
@@ -68,7 +75,7 @@
           <div class="row__column">
             <img
               class="row__column--icon"
-              src="images/user.svg"
+              src="static/images/user.svg"
               alt="user icon"
             />
             <div class="row__column--text">
@@ -81,7 +88,7 @@
           <div class="row__column">
             <img
               class="row__column--icon"
-              src="images/location.svg"
+              src="static/images/location.svg"
               alt="user icon"
             />
             <div class="row__column--text">
@@ -94,7 +101,7 @@
           <div class="row__column">
             <img
               class="row__column--icon"
-              src="images/Server.svg"
+              src="static/images/Server.svg"
               alt="user icon"
             />
             <div class="row__column--text">
@@ -107,7 +114,7 @@
         <section id="Features" class="section section-3 media">
           <img
             class="image"
-            src="images/Illustration 2.svg"
+            src="static/images/Illustration 2.svg"
             alt="image of Illustration 2"
           />
 
@@ -121,7 +128,7 @@
               <li class="box__list--item">
                 <img
                   class="group_icon"
-                  src="images/Group 1120.svg"
+                  src="static/images/Group 1120.svg"
                   alt="an icon"
                 />
                 Powerfull online protection.
@@ -129,21 +136,21 @@
               <li class="box__list--item">
                 <img
                   class="group_icon"
-                  src="images/Group 1120.svg"
+                  src="static/images/Group 1120.svg"
                   alt="an icon"
                 />Internet without borders.
               </li>
               <li class="box__list--item">
                 <img
                   class="group_icon"
-                  src="images/Group 1120.svg"
+                  src="static/images/Group 1120.svg"
                   alt="an icon"
                 />Supercharged VPN
               </li>
               <li class="box__list--item">
                 <img
                   class="group_icon"
-                  src="images/Group 1120.svg"
+                  src="static/images/Group 1120.svg"
                   alt="an icon"
                 />No specific time limits.
               </li>
@@ -151,7 +158,7 @@
           </div>
         </section>
 
-        <section class="section plan">
+        <section class="section plan" id="Pricing">
           <h2 class="box__title">Choose Your Plan</h2>
           <p class="description">
             Let's choose the package that is best for you and explore it happily
@@ -162,13 +169,17 @@
 
         <section class="section plans media">
           <div class="plan_column">
-            <img src="images/Free.svg" alt="Free icon Plan" class="free_icon" />
+            <img
+              src="static/images/Free.svg"
+              alt="Free icon Plan"
+              class="free_icon"
+            />
             <span class="plan_title">Free Plan</span>
             <ul class="box__list">
               <li class="box__list--item">
                 <img
                   class="group_icon"
-                  src="images/Group 1223.svg"
+                  src="static/images/Group 1223.svg"
                   alt="an icon"
                 />
                 Unlimited Bandwitch
@@ -176,39 +187,43 @@
               <li class="box__list--item">
                 <img
                   class="group_icon"
-                  src="images/Group 1223.svg"
+                  src="static/images/Group 1223.svg"
                   alt="an icon"
                 />Encrypted Connection
               </li>
               <li class="box__list--item">
                 <img
                   class="group_icon"
-                  src="images/Group 1223.svg"
+                  src="static/images/Group 1223.svg"
                   alt="an icon"
                 />No Traffic Logs
               </li>
               <li class="box__list--item">
                 <img
                   class="group_icon"
-                  src="images/Group 1223.svg"
+                  src="static/images/Group 1223.svg"
                   alt="an icon"
                 />Works on All Devices
               </li>
             </ul>
             <div class="get_plan">
               <span class="plan_title plan_title-2">Free</span>
-              <a href=""><span class="sign__up select">Select</span></a>
+              <a href="#"><span class="select">Select</span></a>
             </div>
           </div>
 
           <div class="plan_column">
-            <img src="images/Free.svg" alt="Free icon Plan" class="free_icon" />
+            <img
+              src="static/images/Free.svg"
+              alt="Free icon Plan"
+              class="free_icon"
+            />
             <span class="plan_title">Standard Plan</span>
             <ul class="box__list">
               <li class="box__list--item">
                 <img
                   class="group_icon"
-                  src="images/Group 1223.svg"
+                  src="static/images/Group 1223.svg"
                   alt="an icon"
                 />
                 Unlimited Bandwitch
@@ -216,28 +231,28 @@
               <li class="box__list--item">
                 <img
                   class="group_icon"
-                  src="images/Group 1223.svg"
+                  src="static/images/Group 1223.svg"
                   alt="an icon"
                 />Encrypted Connection
               </li>
               <li class="box__list--item">
                 <img
                   class="group_icon"
-                  src="images/Group 1223.svg"
+                  src="static/images/Group 1223.svg"
                   alt="an icon"
                 />Yes Traffic Logs
               </li>
               <li class="box__list--item">
                 <img
                   class="group_icon"
-                  src="images/Group 1223.svg"
+                  src="static/images/Group 1223.svg"
                   alt="an icon"
                 />Works on All Devices
               </li>
               <li class="box__list--item">
                 <img
                   class="group_icon"
-                  src="images/Group 1223.svg"
+                  src="static/images/Group 1223.svg"
                   alt="an icon"
                 />Connect Anyware
               </li>
@@ -246,18 +261,22 @@
               <span class="plan_title plan_title-2"
                 >$9 <span class="mo"> / mo</span></span
               >
-              <a href=""><span class="sign__up select">Select</span></a>
+              <a href="#"><span class="sign__up select">Select</span></a>
             </div>
           </div>
 
           <div class="plan_column premium_column">
-            <img src="images/Free.svg" alt="Free icon Plan" class="free_icon" />
+            <img
+              src="static/images/Free.svg"
+              alt="Free icon Plan"
+              class="free_icon"
+            />
             <span class="plan_title">Premium Plan</span>
             <ul class="box__list">
               <li class="box__list--item">
                 <img
                   class="group_icon"
-                  src="images/Group 1223.svg"
+                  src="static/images/Group 1223.svg"
                   alt="an icon"
                 />
                 Unlimited Bandwitch
@@ -265,35 +284,35 @@
               <li class="box__list--item">
                 <img
                   class="group_icon"
-                  src="images/Group 1223.svg"
+                  src="static/images/Group 1223.svg"
                   alt="an icon"
                 />Encrypted Connection
               </li>
               <li class="box__list--item">
                 <img
                   class="group_icon"
-                  src="images/Group 1223.svg"
+                  src="static/images/Group 1223.svg"
                   alt="an icon"
                 />Yes Traffic Logs
               </li>
               <li class="box__list--item">
                 <img
                   class="group_icon"
-                  src="images/Group 1223.svg"
+                  src="static/images/Group 1223.svg"
                   alt="an icon"
                 />Works on All Devices
               </li>
               <li class="box__list--item">
                 <img
                   class="group_icon"
-                  src="images/Group 1223.svg"
+                  src="static/images/Group 1223.svg"
                   alt="an icon"
                 />Connect Anyware
               </li>
               <li class="box__list--item">
                 <img
                   class="group_icon"
-                  src="images/Group 1223.svg"
+                  src="static/images/Group 1223.svg"
                   alt="an icon"
                 />Get New Features
               </li>
@@ -302,7 +321,7 @@
               <span class="plan_title plan_title-2"
                 >$12 <span class="mo"> / mo</span></span
               >
-              <a href="">
+              <a href="#">
                 <span class="premium_select sign__up select">Select</span></a
               >
             </div>
@@ -318,8 +337,8 @@
             See <span class="logo__title--vpn"> LaslesVPN</span> everywhere to
             make it easier for you when you move <br />locations.
           </p>
-          <img src="images/map.svg" alt="map" width="100%" />
-          <img src="images/Sponsored.svg" alt="Sponsored" width="100%" />
+          <img src="static/images/map.svg" alt="map" width="100%" />
+          <img src="static/images/Sponsored.svg" alt="Sponsored" width="100%" />
         </section>
 
         <section id="Testimonials" class="section customer_section">
@@ -338,7 +357,7 @@
                 <div class="clients_opinion-data">
                   <img
                     class="clients_opinion--pic"
-                    src="images/personal.pic.png"
+                    src="static/images/personal.pic.png"
                     alt="Ellipse"
                   />
                   <div class="clients_opinion--info">
@@ -349,7 +368,7 @@
                     Sharqiya, Egypt
                   </div>
                   <span class="clients_opinion--rate">
-                    5 <img src="images/star.svg" alt="" />
+                    5 <img src="static/images/star.svg" alt="" />
                   </span>
                 </div>
                 <p class="description">
@@ -364,7 +383,7 @@
                 <div class="clients_opinion-data">
                   <img
                     class="clients_opinion--pic"
-                    src="images/Ellipse 175.svg"
+                    src="static/images/Ellipse 175.svg"
                     alt="Ellipse"
                   />
                   <div class="clients_opinion--info">
@@ -372,7 +391,7 @@
                     Warsaw, Poland
                   </div>
                   <span class="clients_opinion--rate">
-                    4.5 <img src="images/star.svg" alt="" />
+                    4.5 <img src="static/images/star.svg" alt="" />
                   </span>
                 </div>
                 <p class="description">
@@ -386,7 +405,7 @@
                 <div class="clients_opinion-data">
                   <img
                     class="clients_opinion--pic"
-                    src="images/Ellipse 175 (2).svg"
+                    src="static/images/Ellipse 175 (2).svg"
                     alt="Ellipse"
                   />
                   <div class="clients_opinion--info">
@@ -394,7 +413,7 @@
                     Seoul, South Korea
                   </div>
                   <span class="clients_opinion--rate">
-                    5 <img src="images/star.svg" alt="" />
+                    5 <img src="static/images/star.svg" alt="" />
                   </span>
                 </div>
                 <p class="description">
@@ -407,7 +426,7 @@
                 <div class="clients_opinion-data">
                   <img
                     class="clients_opinion--pic"
-                    src="images/Ellipse 175 (1).svg"
+                    src="static/images/Ellipse 175 (1).svg"
                     alt="Ellipse"
                   />
                   <div class="clients_opinion--info">
@@ -415,7 +434,7 @@
                     Shanxi, China
                   </div>
                   <span class="clients_opinion--rate">
-                    4.5 <img src="images/star.svg" alt="" />
+                    4.5 <img src="static/images/star.svg" alt="" />
                   </span>
                 </div>
                 <p class="description">
@@ -432,15 +451,18 @@
                   <span class="dot"></span>
                 </div>
                 <div class="arrows">
-                  <img class="arrow-left" src="images/arrow-left.svg" />
-                  <img class="arrow-right" src="images/arrow-right.svg" />
+                  <img class="arrow-left" src="static/images/arrow-left.svg" />
+                  <img
+                    class="arrow-right"
+                    src="static/images/arrow-right.svg"
+                  />
                 </div>
               </div>
             </div>
           </div>
         </section>
 
-        <section id="Pricing" class="subscribe_section media">
+        <section class="subscribe_section media">
           <div class="subscribe row">
             <div class="box">
               <h2 class="box__title box__title-2">
@@ -457,7 +479,7 @@
           <section id="Help" class="last">
             <div class="logo_last">
               <div class="logo">
-                <img src="images/Vector.svg" alt="Site Logo" />
+                <img src="static/images/Vector.svg" alt="Site Logo" />
                 <h3 class="logo__title">
                   Lasles<span class="logo__title--vpn">VPN</span>
                 </h3>
@@ -467,47 +489,51 @@
                 has unique features and has high security.
               </p>
               <span class="social_media">
-                <img src="images/Facebook.svg" alt="Facebook logo" />
-                <img src="images/Instagram.svg" alt="Instagram logo" />
-                <img src="images/Twitter.svg" alt="Twitter logo" />
+                <img src="static/images/Facebook.svg" alt="Facebook logo" />
+                <img src="static/images/Instagram.svg" alt="Instagram logo" />
+                <img src="static/images/Twitter.svg" alt="Twitter logo" />
               </span>
               <a href="https://mahmoud-mansy-portfolio.netlify.app/">
-                <p class="footer description">©2024 by Mahmoud Mansy <br /></p>
-                <img
-                  class="clients_opinion--pic"
-                  src="images/personal.pic.png"
-                  alt="My logo"
-                />
+                <div class="footer">
+                  <p class="footer description">
+                    ©2024 by Mahmoud Mansy <br />
+                  </p>
+                  <img
+                    class="clients_opinion--pic"
+                    src="static/images/personal.pic.png"
+                    alt="My logo"
+                  />
+                </div>
               </a>
             </div>
 
             <div class="product">
               <ul class="links">
-                <h3 class="links__title">Product</h3>
-                <li class="links__item">Download</li>
-                <li class="links__item">Pricing</li>
-                <li class="links__item">Locations</li>
-                <li class="links__item">Server</li>
-                <li class="links__item">Countries</li>
-                <li class="links__item">Blog</li>
+                <a href="#"> <h3 class="links__title">Product</h3></a>
+                <a href="#"><li class="links__item">Download</li> </a>
+                <a href="#Pricing"><li class="links__item">Pricing</li> </a>
+                <a href="#"> <li class="links__item">Locations</li> </a>
+                <a href="#"> <li class="links__item">Server</li> </a>
+                <a href="#"><li class="links__item">Countries</li> </a>
+                <a href="#"><li class="links__item">Blog</li> </a>
               </ul>
             </div>
             <div class="product">
               <ul class="links">
-                <h3 class="links__title">Engage</h3>
-                <li class="links__item">LaslesVPN ?</li>
-                <li class="links__item">FAQ</li>
-                <li class="links__item">Tutorials</li>
-                <li class="links__item">About Us</li>
-                <li class="links__item">Privacy Policy</li>
-                <li class="links__item">Terms of Service</li>
+                <a href="#"><h3 class="links__title">Engage</h3> </a>
+                <a href="#"><li class="links__item">LaslesVPN ?</li> </a>
+                <a href="#"><li class="links__item">FAQ</li> </a>
+                <a href="#"><li class="links__item">Tutorials</li> </a>
+                <a href="#About"><li class="links__item">About Us</li> </a>
+                <a href="#"><li class="links__item">Privacy Policy</li> </a>
+                <a href="#"><li class="links__item">Terms of Service</li> </a>
               </ul>
             </div>
             <div class="product">
               <ul class="links">
-                <h3 class="links__title">Earn Money</h3>
-                <li class="links__item">Affiliate</li>
-                <li class="links__item">Become Partner</li>
+                <a href="#"> <h3 class="links__title">Earn Money</h3> </a>
+                <a href="#"><li class="links__item">Affiliate</li> </a>
+                <a href="#"><li class="links__item">Become Partner</li> </a>
               </ul>
             </div>
           </section>
@@ -555,5 +581,36 @@
         });
       }
     });
+
+    // Function to toggle the visibility of the navigation menu
+
+    function toggleNav() {
+      var nav = document.querySelector(".nav");
+      var checkbox = document.getElementById("menu");
+      var burgerBars = document.querySelectorAll(".burger-menu__bar");
+
+      // Toggle the 'checked' property of the checkbox
+      checkbox.checked = !checkbox.checked;
+
+      // Toggle the 'nav-visible' class to show/hide the navigation menu
+      if (checkbox.checked) {
+        nav.classList.add("nav-visible");
+        nav.style.top = "100%";
+        nav.style.transition = ".7s";
+        // Apply styles for checked state
+        burgerBars[0].style.transform = "translateY(8px) rotate(40deg)";
+        burgerBars[1].style.opacity = "0";
+        burgerBars[1].style.visibility = "hidden";
+        burgerBars[2].style.transform = "translateY(-4px) rotate(-40deg)";
+      } else {
+        nav.style.top = "0";
+        nav.classList.remove("nav-visible");
+        // Reset styles for unchecked state
+        burgerBars[0].style.transform = "";
+        burgerBars[1].style.opacity = "";
+        burgerBars[1].style.visibility = "";
+        burgerBars[2].style.transform = "";
+      }
+    }
   </script>
 </html>

@@ -1,0 +1,82 @@
+/* Header */
+.header {
+  position: sticky;
+  top: 0;
+  padding: 1.5rem 0;
+  display: flex;
+  background-color: #fff;
+  z-index: 1;
+  align-items: center;
+  justify-content: space-between;
+  .burger-menu__checkbox {
+    display: none;
+  }
+  /* Logo */
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    color: var(--color-very-black-gray);
+    font-size: 2rem;
+    .logo__title {
+      font-weight: var(--font-weight-bold);
+    }
+
+    .logo__title--vpn,
+    .logo__title--vpn-2 {
+      font-weight: var(--font-weight-very-bold);
+    }
+  }
+
+  /* Navigation */
+  .nav {
+    display: flex;
+    column-gap: 3rem;
+    font-size: 1.6rem;
+    color: var(--color-black-gray);
+    .nav__item:hover {
+      color: var(--color-red);
+      transition: 0.5s;
+    }
+  }
+
+  /* Sign */
+  .sign {
+    display: flex;
+    align-items: center;
+    column-gap: 3rem;
+    font-size: 1.6rem;
+    font-weight: var(--font-weight-bold);
+    .sign__in:hover {
+      color: var(--color-red);
+      transition: 0.5s;
+    }
+    .sign__in {
+      color: var(--color-very-black-gray);
+    }
+    .sign__up:hover {
+      color: white;
+      background-color: var(--color-dark-red);
+      box-shadow: 0 0.4rem 0.8rem 0.5rem rgba(245, 56, 56, 0.35);
+      transition: 0.5s;
+    }
+    .sign__up {
+      color: var(--color-red);
+      padding: 1rem 4.5rem;
+      border-radius: calc(var(--default-radius) * 1000);
+      border: 1px solid var(--color-red);
+    }
+  }
+}
+
+.header::before {
+  content: "";
+  position: absolute;
+  width: 100vw;
+  height: 100%;
+  top: 0;
+  background-color: white;
+  z-index: -1;
+}
+
+/* End Header */
