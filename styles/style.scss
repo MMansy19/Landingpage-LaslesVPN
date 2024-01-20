@@ -5,6 +5,7 @@
   --color-red: #f53855;
   --color-dark-red: #f53838;
 
+  --color-input-border: var(--color-black);
   --background-color: linear-gradient(
     180deg,
     #f8f8f8 -45.04%,
@@ -21,6 +22,9 @@
   --desktop-width: 1140px;
   --tablet-width: 600px;
 }
+/* ============================================ */
+/* ============================================ */
+/* ============================================ */
 /* CSS Reset */
 * {
   margin: 0;
@@ -75,13 +79,15 @@ body {
   padding: 0 var(--default-padding);
 }
 
+/* ============================================ */
+/* ============================================ */
+/* ============================================ */
 /* Start Header*/
 .header {
   position: sticky;
   top: 0;
   padding: 1.5rem 0;
   display: flex;
-  // justify-content: center;
   background-color: #fff;
   z-index: 1;
   align-items: center;
@@ -133,7 +139,7 @@ body {
 }
 .sign__up {
   color: var(--color-red);
-  padding: 1.3rem 4.5rem;
+  padding: 1rem 4.5rem;
   border-radius: calc(var(--default-radius) * 1000);
   border: 1px solid var(--color-red);
 }
@@ -145,6 +151,9 @@ body {
   flex-direction: column;
   row-gap: 5rem;
 }
+/* ============================================ */
+/* ============================================ */
+/* ============================================ */
 // Start Section 1
 .section-1 {
   margin-bottom: 5rem;
@@ -197,6 +206,9 @@ h2.box__title {
 }
 // End Section 1
 
+/* ============================================ */
+/* ============================================ */
+/* ============================================ */
 // Start Section 2
 .row {
   width: 100%;
@@ -227,6 +239,9 @@ h2.box__title {
 }
 
 // End Section 2
+/* ============================================ */
+/* ============================================ */
+/* ============================================ */
 
 // Start Section 3
 .section-3 {
@@ -238,6 +253,9 @@ h2.box__title {
   row-gap: 1.5rem;
 }
 // End Section 3
+/* ============================================ */
+/* ============================================ */
+/* ============================================ */
 
 // Start Plans
 .plan {
@@ -263,6 +281,11 @@ h2.box__title {
 }
 .premium_column {
   border: 2px solid var(--color-red);
+}
+.premium_select {
+  color: white;
+  background-color: var(--color-dark-red);
+  box-shadow: 0 0.4rem 0.8rem 0.5rem rgba(245, 56, 56, 0.35);
 }
 .free_icon {
   margin-top: 8rem;
@@ -291,6 +314,9 @@ h2.box__title {
 }
 // End Plans
 
+/* ============================================ */
+/* ============================================ */
+/* ============================================ */
 // Start Customer
 .customer_section {
   display: flex;
@@ -300,12 +326,12 @@ h2.box__title {
   padding-bottom: 10rem;
 }
 .clients__opinions {
+  max-width: 80%;
   margin: 4rem 0;
 }
 .clients__wrapper {
   display: flex;
-  // width: 80%;
-  margin: 0 auto;
+  // margin: 0 auto;
   overflow-x: auto;
   column-gap: 5rem;
   // scroll-snap-type: x mandatory;
@@ -413,6 +439,9 @@ h2.box__title {
 }
 // End Customer
 
+/* ============================================ */
+/* ============================================ */
+/* ============================================ */
 // Start Subscribe
 .subscribe_section {
   background: var(--background-color);
@@ -430,6 +459,9 @@ h2.box__title {
 }
 // End Subscribe
 
+/* ============================================ */
+/* ============================================ */
+/* ============================================ */
 // Start Last Section
 .last {
   background: var(--background-color);
@@ -465,6 +497,9 @@ h2.box__title {
 // End Last Section
 /* End Article */
 
+/* ============================================ */
+/* ============================================ */
+/* ============================================ */
 /* Responsive For Mobile & Tablet */
 @media (max-width: 800px) {
   .header {
@@ -486,7 +521,7 @@ h2.box__title {
   .section {
     flex-direction: column;
     align-items: center;
-    text-align: center;
+    // text-align: center;
     row-gap: 2rem;
   }
 
@@ -495,6 +530,11 @@ h2.box__title {
     align-items: center;
     text-align: center;
     padding: var(--default-padding);
+  }
+  .vertical-line {
+    height: 0.1rem;
+    width: 80%;
+    border: 2px solid #eeeff2;
   }
 
   .row__column {
@@ -527,8 +567,34 @@ h2.box__title {
     border: 2px solid #eeeff2;
   }
 
+  .links {
+    text-align: center;
+  }
+}
+/* Add this media query for mobile devices with a maximum width of 500px */
+@media (max-width: 700px) {
+  .header::before {
+    z-index: 0;
+  }
+  .header {
+    // position: relative;
+    top: 0;
+    justify-content: space-between;
+    padding-top: 4rem; /* Adjust padding as needed */
+    align-items: center;
+
+    .nav {
+      font-size: 0;
+      opacity: 0;
+    }
+    .sign {
+      // flex-direction : column; /* Stack navigation links vertically */
+      column-gap: 1rem;
+    }
+  }
   .clients_opinion {
     max-width: 100%; /* Allow testimonials to take up full width on smaller screens */
+    flex-basis: auto;
   }
   .clients__wrapper {
     display: flex;
@@ -537,10 +603,11 @@ h2.box__title {
     width: 100%;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
+    row-gap: 2rem;
   }
 
-  .clients_opinion {
-    flex-basis: auto;
+  .clients__opinions {
+    max-width: 100%;
   }
 
   .controls {
@@ -567,32 +634,16 @@ h2.box__title {
     justify-content: center;
     column-gap: 0;
   }
-
-  .links {
+  .logo {
+    text-align: center;
+    justify-content: center;
+    column-gap: 1rem;
+  }
+  .social_media {
+    justify-content: center;
+  }
+  .footer {
     text-align: center;
   }
 }
-/* Add this media query for mobile devices with a maximum width of 500px */
-@media (max-width: 700px) {
-  .header::before {
-    z-index: 0;
-  }
-  .header {
-    // position: relative;
-    top: 0;
-    // flex-direction: column; /* Stack items vertically */
-    padding: 0 1rem; /* Adjust padding as needed */
-
-    .nav {
-      flex-direction: column; /* Stack navigation links vertically */
-      margin-top: 3rem; /* Adjust margin as needed */
-      row-gap: 0.5rem;
-    }
-    .sign {
-      flex-direction: column; /* Stack navigation links vertically */
-      row-gap: 1rem;
-    }
-  }
-}
-
 /* End Responsive For Mobile & Tablet */
