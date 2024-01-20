@@ -24,6 +24,18 @@ This project showcases the use of Figma, a collaborative interface design tool, 
 - **Testimonials Section:** Highlighting positive customer experiences through testimonials, complete with client names, locations, and ratings.
 
 - **Footer:** A comprehensive footer with navigation links, contact information, and social media links.
+## Skills
+
+### 1. HTML 
+### 2. CSS 
+### 3. JavaScript
+### 4. Responsive Design:
+
+- Implementing responsive layouts using media queries.
+- Mobile-first design approach for optimal performance.
+- Fluid grids and flexible images for adaptability across devices.
+- Responsive typography for readability on various screen sizes.
+
 
 ## Getting Started
 
