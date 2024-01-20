@@ -2,9 +2,12 @@
 
 ## [Live Site](https://main--laslesvpn-mansy.netlify.app/)
 
+## ![](images/Cover.png)
+
 ## Overview
 
 Welcome to [Landing Page LaslesVPN]! This is a modern and feature-rich website designed as a landing page of LaslesVPN. The site incorporates various sections, features, and responsive design elements to enhance the user experience.
+
 
 ## Table of Contents
 - [Features](#features)
@@ -14,6 +17,7 @@ Welcome to [Landing Page LaslesVPN]! This is a modern and feature-rich website d
 - [Responsive Design](#responsive-design)
 - [Contributing](#contributing)
 - [License](#license)
+
 
 ## Features
 
