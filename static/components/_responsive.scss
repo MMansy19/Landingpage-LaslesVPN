@@ -159,11 +159,22 @@
 
   .clients__wrapper {
     display: flex;
-    font-size: 1rem;
+    flex-direction: column;
+  }
+  .clients_opinion--info,
+  .clients_opinion--name {
+    font-size: 1.2rem;
+  }
+  .description {
+    font-size: 1.2rem;
+    padding: 1rem;
   }
 
   .clients__opinions {
     max-width: 100%;
+  }
+  .clients_opinion--rate {
+    margin-left: 0;
   }
 
   .controls {

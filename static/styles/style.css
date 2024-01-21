@@ -372,7 +372,8 @@ body {
   flex-direction: column;
   align-items: center;
   border: 2px solid #eeeff2;
-  height: 25rem;
+  height: auto;
+  width: auto;
   border-radius: var(--default-radius);
   flex-basis: 40%;
   flex-shrink: 0;
@@ -420,8 +421,7 @@ body {
   display: flex;
   flex-direction: row;
   column-gap: 1rem;
-  margin-left: 7rem;
-  justify-self: left;
+  margin-left: auto;
   font-size: 1.6rem;
   font-weight: var(--font-weight-light-bold);
   color: var(--color-very-black-gray);
@@ -681,10 +681,21 @@ body {
   }
   .clients__wrapper {
     display: flex;
-    font-size: 1rem;
+    flex-direction: column;
+  }
+  .clients_opinion--info,
+  .clients_opinion--name {
+    font-size: 1.2rem;
+  }
+  .description {
+    font-size: 1.2rem;
+    padding: 1rem;
   }
   .clients__opinions {
     max-width: 100%;
+  }
+  .clients_opinion--rate {
+    margin-left: 0;
   }
   .controls {
     margin-top: 1rem;
@@ -724,4 +735,4 @@ body {
     text-align: center;
   }
 }
-/* End Responsive For Mobile & Tablet */ /*# sourceMappingURL=style.css.map */
+/* End Responsive For Mobile & Tablet *//*# sourceMappingURL=style.css.map */
