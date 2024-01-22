@@ -18,6 +18,12 @@
   color: var(--color-very-black-gray);
 }
 
+.box__GetStarted:hover {
+  background-color: var(--color-dark-red);
+  transition: 0.5s;
+  background-color: rgb(67, 3, 127);
+  box-shadow: 0 0.4rem 0.8rem 0.5rem rgba(25, 2, 76, 0.35);
+}
 .box__GetStarted {
   color: white;
   margin-top: 5rem;
@@ -34,9 +40,23 @@ h2.box__title {
   font-weight: var(--font-weight-very-bold);
 }
 
+@keyframes jump {
+  0%,
+  100% {
+    transform: translateY(0) scale(1);
+  }
+  50% {
+    transform: translateY(-15%) scale(1);
+  }
+}
+
 .image {
   width: 100%;
   max-width: 50rem;
+  animation: jump 10s infinite alternate ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  box-shadow: 0 0.4rem 0.8rem 0.2rem rgba(0, 0, 0, 0.3);
+  border-radius: calc(var(--default-radius) * 2);
 }
 
 .description {
@@ -94,6 +114,7 @@ h2.box__title {
 =========================== */
 .section-3 {
   column-gap: 17rem;
+  margin-top: 3rem;
 }
 
 .box__list {

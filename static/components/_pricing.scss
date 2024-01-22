@@ -43,6 +43,11 @@
   transition: 0.5s;
   padding: 1rem 4.5rem;
 }
+.premium_select:hover {
+  background-color: rgb(67, 3, 127);
+  transition: 0.5s;
+  box-shadow: 0 0.4rem 0.8rem 0.5rem rgba(25, 2, 76, 0.35);
+}
 .premium_select {
   color: var(--color-red);
   padding: 1rem 4.5rem;
